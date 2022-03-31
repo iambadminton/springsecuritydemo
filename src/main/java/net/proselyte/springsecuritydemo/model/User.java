@@ -1,4 +1,4 @@
-package ru.shipulin.springsecuritydemo.model;
+package net.proselyte.springsecuritydemo.model;
 
 import lombok.Data;
 
@@ -15,14 +15,16 @@ public class User {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "first_name")
-    private String fistName;
+    private String firstName;
 
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "password")
-    private String password;
+
 
     @Enumerated(value = EnumType.STRING)
     @Column(name = "role")

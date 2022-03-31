@@ -1,11 +1,11 @@
-package ru.shipulin.springsecuritydemo.security;
+package net.proselyte.springsecuritydemo.security;
 
 import lombok.Data;
+import net.proselyte.springsecuritydemo.model.Status;
+import net.proselyte.springsecuritydemo.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import ru.shipulin.springsecuritydemo.model.Status;
-import ru.shipulin.springsecuritydemo.model.User;
 
 
 import java.util.Collection;
@@ -17,7 +17,7 @@ public class SecurityUser implements UserDetails {
     private final String username;
     private final String password;
     private final List<SimpleGrantedAuthority> authorities;
-    private boolean isActive;
+    private final boolean isActive;
 
     public SecurityUser(String username, String password, List<SimpleGrantedAuthority> authorities, boolean isActive) {
         this.username = username;

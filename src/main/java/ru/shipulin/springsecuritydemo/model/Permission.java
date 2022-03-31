@@ -1,4 +1,4 @@
-package net.proselyte.springsecuritydemo.model;
+package ru.shipulin.springsecuritydemo.model;
 
 public enum Permission {
     DEVELOPERS_READ("developers:read"),

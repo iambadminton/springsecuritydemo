@@ -1,12 +1,12 @@
-package net.proselyte.springsecuritydemo.security;
+package ru.shipulin.springsecuritydemo.security;
 
-import net.proselyte.springsecuritydemo.model.User;
+import ru.shipulin.springsecuritydemo.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import net.proselyte.springsecuritydemo.repository.UserRepository;
+import ru.shipulin.springsecuritydemo.repository.UserRepository;
 
 @Service("userDetailsServiceImpl")
 public class UserDetailsServiceImpl implements UserDetailsService {

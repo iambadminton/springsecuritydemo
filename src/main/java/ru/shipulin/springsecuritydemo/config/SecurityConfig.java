@@ -1,4 +1,4 @@
-package net.proselyte.springsecuritydemo.config;
+package ru.shipulin.springsecuritydemo.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,4 +1,4 @@
-package ru.shipulin.springsecuritydemo.model;
+package net.proselyte.springsecuritydemo.model;
 
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 

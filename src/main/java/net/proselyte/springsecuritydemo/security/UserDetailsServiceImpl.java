@@ -1,12 +1,12 @@
-package ru.shipulin.springsecuritydemo.security;
+package net.proselyte.springsecuritydemo.security;
 
-import ru.shipulin.springsecuritydemo.model.User;
+import net.proselyte.springsecuritydemo.repository.UserRepository;
+import net.proselyte.springsecuritydemo.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ru.shipulin.springsecuritydemo.repository.UserRepository;
 
 @Service("userDetailsServiceImpl")
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -23,5 +23,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         User user = userRepository.findByEmail(email).orElseThrow(() ->
                 new UsernameNotFoundException("User doesn't exists"));
         return SecurityUser.fromUser(user);
-    }
-}
+    

@@ -1,5 +1,8 @@
-package ru.shipulin.springsecuritydemo.rest;
+package net.proselyte.springsecuritydemo.rest;
 
+import net.proselyte.springsecuritydemo.model.User;
+import net.proselyte.springsecuritydemo.repository.UserRepository;
+import net.proselyte.springsecuritydemo.security.JwtTokenProvider;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -11,10 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.shipulin.springsecuritydemo.model.User;
-import ru.shipulin.springsecuritydemo.repository.UserRepository;
-import ru.shipulin.springsecuritydemo.security.JwtAuthentificationException;
-import ru.shipulin.springsecuritydemo.security.JwtTokenProvider;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,4 +1,4 @@
-package ru.shipulin.springsecuritydemo;
+package net.proselyte.springsecuritydemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

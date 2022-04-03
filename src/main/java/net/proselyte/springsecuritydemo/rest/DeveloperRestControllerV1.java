@@ -1,8 +1,8 @@
-package ru.shipulin.springsecuritydemo.rest;
+package net.proselyte.springsecuritydemo.rest;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import ru.shipulin.springsecuritydemo.model.Developer;
+import net.proselyte.springsecuritydemo.model.Developer;
 
 import java.util.List;
 import java.util.stream.Collectors;

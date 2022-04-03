@@ -1,6 +1,6 @@
-package ru.shipulin.springsecuritydemo.repository;
+package net.proselyte.springsecuritydemo.repository;
 
-import ru.shipulin.springsecuritydemo.model.User;
+import net.proselyte.springsecuritydemo.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

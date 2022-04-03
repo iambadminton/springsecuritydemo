@@ -1,4 +1,4 @@
-package ru.shipulin.springsecuritydemo.controller;
+package net.proselyte.springsecuritydemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

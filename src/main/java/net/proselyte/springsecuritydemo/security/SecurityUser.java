@@ -53,12 +53,12 @@ public class SecurityUser implements UserDetails {
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return isActive;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return isActive;
     }
 
     public static UserDetails fromUser(User user) {
@@ -72,4 +72,5 @@ public class SecurityUser implements UserDetails {
                 user.getRole().getAuthorities()
         );
 
-    
+    }
+}
